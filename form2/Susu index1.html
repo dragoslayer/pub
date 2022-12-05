@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+  <head>
+
+    <title>Registration</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./style.css">
+
+    
+
+  </head>
+
+  <body>
+
+     
+
+      <div class="container">
+
+        <form id="form" onsubmit="event.preventDefault();onFormSubmit();"autocomplete="off">
+
+        <h1>Registration</h1>
+
+        <div class="left">
+
+          <label>Full Name</label><br>
+
+          <input type="text" placeholder="Enter your Name" id="fullName" /><br>
+
+          <div class="error"></div><br>
+
+          <label>Email</label><br>
+
+          <input type="email" placeholder="Enter your email" id="eMail" /><br>
+
+          <div class="error"></div><br>
+
+          <label>Password</label><br>
+
+          <input type="password" placeholder="Enter your password" id="passWord"/><br>          
+
+        </div>
+
+        <div class="right">
+
+          <label>User name</label><br>
+
+          <input type="text" placeholder="enter your username"  id="userName"/><br>
+
+          <div class="error"></div><br>
+
+          <label>Phone Number</label><br>
+
+          <input type="number" placeholder="enter your number" id="phoneNumber" /><br>
+
+          <div class="error"></div><br>
+
+          <label>Confirm Password</label><br>
+
+          <input type="password" placeholder="connfirm your password"  id="passWord2"/><br>
+
+          <div class="error"></div><br>
+
+          
+
+        </div>
+
+        <div>
+
+        <label>Gender</label><br>
+
+          <input type="radio" name="gender" value="male" />Male
+
+          <input type="radio" name="gender" value="female" />Female
+
+          <input type="radio" name="gender" value="prefer not to say" />prefer
+
+          not to say</div>
+
+        <footer type="button">
+
+          <p>Register</p>
+
+        </footer>
+
+      </form>
+
+      </div><br>
+
+      
+
+      <table class="list" id="Register">
+
+        <th>
+
+          <tr>
+
+            <th>FullName</th>
+
+            <th>UserName</th> 
+
+            <th>phoneNumber</th> 
+
+            <th>password</th>
+
+            <th>passWord2</th>
+
+            <th>Gender</th>
+
+          </tr>
+
+        </th>
+
+      </table>
+
+    
+
+      <script src="main.js"></script>
+
+  </body>
+
+  
+
+</html>
