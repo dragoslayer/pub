@@ -42,7 +42,7 @@ function readFormData(){
 
 function insertNewRecord(data){
 
-    var table =document.getElementById("Register").getElementsByTagName("tbody")[0];
+    var table =document.getElementById("Register").getElementsByTagName('tbody')[0];
 
     var newRow=table.insertRow(table.length);
 
@@ -74,7 +74,7 @@ function insertNewRecord(data){
 
     cell6.innerHTML=`<a onClick="onEdit(this)">Edit</a>
 
-                     <a onClick="onEdit(this)">Delet</a>`
+                     <a onClick="onDelete(this)">Delete</a>`;
 
 }
 
@@ -150,19 +150,19 @@ function Validate(){
 
     if(document.getElementById("fullName").value==""){
 
-        alert("enter fullName")
+        alert("enter fullName");
 
         isValid=false;
 
-        document.getElementById("fullNmaeValidationError").classList.remove("hide");
+        document.getElementById("fullNameValidationError").classList.remove("hide");
 
     }else{
 
         isValid=true;
 
-        if(!document.getElementById("fullNmaeValidationError").classList.contains("hide"))
+        if(!document.getElementById("fullNameValidationError").classList.contains("hide"))
 
-        document.getElementById("fullNmaeValidationError").classList.add("hide");
+        document.getElementById("fullNameValidationError").classList.add("hide");
 
     }
 
