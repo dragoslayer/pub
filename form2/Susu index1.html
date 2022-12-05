@@ -8,7 +8,7 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./SusStyle.css">
 
     
 
@@ -26,7 +26,8 @@
 
         <div class="left">
 
-          <label>Full Name</label><br>
+         <label>Full Name</label><label class="validation-error hide" id="fullNameValidationError"></label>
+                        <br>
 
           <input type="text" placeholder="Enter your Name" id="fullName" /><br>
 
@@ -80,11 +81,10 @@
 
           not to say</div>
 
-        <footer type="button">
+        <input type="submit" value="Submit">
 
-          <p>Register</p>
 
-        </footer>
+        
 
       </form>
 
@@ -118,7 +118,7 @@
 
     
 
-      <script src="main.js"></script>
+      <script src="SusIndex.js"></script>
 
   </body>
 
