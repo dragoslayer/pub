@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Registration
+    </title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+
+<body>
+    <table>
+        <tr>
+            <td>
+                <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                    <div>
+                       <label>Full Name</label><label class="validation-error hide" id="fullNameValidationError"></label>
+                        <input type="text" name="fullName" id="FullName" placeholder="Enter your Full Name">
+                    </div>
+                    <div>
+                        <label>Username</label>
+                        <input type="text" name="Username" id="userName" placeholder="Enter your Username">
+                    </div>
+                    <div>
+                        <label>Email</label>
+                        <input type="email" name="Email" id="Email" placeholder="Enter your Email">
+                    </div>
+                    <div>
+                        <label>Phone Number</label>
+                        <input type="tel" name="Phone Number" id="pNumber">
+                    </div>
+                   <div>
+                        <label>Password</label>
+                        <input type="password" name="password" id="password">
+                    </div>
+                   <div>
+                        <label>Confirm Password</label>
+                        <input type="password" name="Confirm password" id="Cpassword">
+                    </div>
+                    <div  class="form-action-buttons">
+                        <input type="submit" value="Submit" >
+                    </div>
+                </form>
+            </td>
+            <td>
+                <table class="list" id="employeeList">
+                    <thead>
+                        <tr>
+                            <th>Full Name</th>
+                            <th>UserName</th>
+                            <th>Email</th>
+                            <th>pNumber</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <script src="script.js"></script>
+</body>
+
+</html>
