@@ -1,0 +1,151 @@
+let form = document.getElementById("form");
+
+let input = document.getElementById("input");
+
+let msg = document.getElementById("msg");
+
+let fullname = document.getElementById("fullname");
+
+let fullnameMessage = document.getElementById("fullnameMessage");
+
+let username = document.getElementById("username");
+
+let usernameMessage = document.getElementById("usernameMessage");
+
+let email = document.getElementById("email");
+
+let emailMessage = document.getElementById("emailMessage");
+
+let phonenumber = document.getElementById("phonenumber");
+
+let phonenumberMessage = document.getElementById("phonenumberMessage");
+
+let password = document.getElementById("password");
+
+let passwordMessage = document.getElementById("passwordMessage");
+
+let gender = document.getElementById("gender");
+
+let genderMessage = document.getElementById("genderMessage");
+
+let formValidation = () => {
+
+  if (fullname.value.length > 50) {
+
+    fullnameMessage.innerHTML = "name cannot be more that 50 letters";
+
+    console.log("fullname failure");
+
+  } else {
+
+    console.log(" fullname successs");
+
+    fullnameMessage.innerHTML <= 50;
+
+    acceptData();
+
+  }
+
+  if (username.value.includes('@','/','[]').length > 15) {
+
+    usernameMessage.innerHTML = "name cannot be more that 15 letters";
+
+    console.log("username failure");
+
+  } else {
+
+    console.log(" username successs");
+
+    fullnameMessage.innerHTML <=15;
+
+    acceptData();
+
+  }
+
+  if(phonenumber.value.length<10){
+
+    phonenumberMessage.innerHTML = "number contans only 10 dits";
+
+    console.log("failure");
+
+  }else{
+
+  console.log("PhoneNumbersuccesss");
+
+  phonenumberMessage.innerHTML >=11;
+
+  acceptData();
+
+}
+
+  if (passwordValue.length < 8) {
+
+    setError(password, "Password must be at least 8 character.");
+
+  } else {
+
+    setSuccess(password);
+
+  }
+
+  if (password2Value === "") {
+
+    setError(password2, "Please confirm your password");
+
+  } else if (password2Value !== passwordValue) {
+
+    setError(password2, "Passwords doesn't match");
+
+  } else {
+
+    setSuccess(password2);
+
+  }
+
+  if (gender.value === "") {
+
+    genderMessage.innerHTML = "gender cannot be blank";
+
+    console.log("Genderfailure");
+
+  } else {
+
+    console.log("Gendersuccesss");
+
+    genderMessage.innerHTML = "";
+
+    acceptData();
+
+  }
+
+};
+
+form.addEventListener("submit", (e) => {
+
+  e.preventDefault();
+
+  console.log("button clicked");
+
+  formValidation();
+
+});
+
+let data = [{}];
+
+let acceptData = () => {
+
+  data.push({
+
+    fullname: fullname.value,
+
+    email: email.value,
+
+    phonenumber: phonenumber.value,
+
+    gender: gender.value,
+
+    username:username.value,
+
+  });
+
+};
