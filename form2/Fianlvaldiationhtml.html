@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+  <head>
+
+    <title>Registration</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./SusStyle.css">
+
+    
+
+  </head>
+
+  <body>
+
+     
+
+      <div class="container">
+
+        <form id="form" onSubmit="event.preventDefault();onSubmit();"autocomplete="off">
+
+        <h1>Registration</h1>
+
+        <div class="left">
+
+         <label>Full Name</label><label class="validation-error hide" id="fullNameValidationError"></label>
+                        <br>
+
+          <input type="text" placeholder="Enter your Name" id="fullname" /><br>
+          <span id="errorFN" value=""></span>
+<div></div>
+          
+
+          <label>Email</label><br>
+
+          <input type="email" placeholder="Enter your email" id="email" /><br>
+
+          <div class="error"></div><br>
+
+          <label>Password</label><br>
+
+          <input type="password" placeholder="Enter your password" id="password"/><br>     
+          <span id="errorPwd1"></span>     
+
+        </div>
+
+        <div class="right">
+
+          <label>User name</label><br>
+
+          <input type="text" placeholder="enter your username"  id="username"/><br>
+
+        <span id="errorUN"></span>
+<div></div> 
+
+          <label>Phone Number</label><br>
+
+          <input type="number" placeholder="enter your number" id="phonenumber" /><br>
+<span id="errorNum"></span>
+<div></div>
+
+          <div class="error"></div><br>
+
+          <label>Confirm Password</label><br>
+
+          <input type="password" placeholder="connfirm your password"  id="password2"/><br>
+<span id="errorPwd2"></span>
+<div></div>
+
+          <div class="error"></div><br>
+
+          
+
+        </div>
+
+        <div>
+
+        <label>Gender</label><br>
+
+          <input type="radio" name="gender" value="male" id="maleB" onClick="CLicked(id);" />Male
+
+          <input type="radio" name="gender" value="female" id="femaleB" onClick="CLicked(id);"/>Female
+
+          <input type="radio" name="gender" value="prefer not to say" id="ntsB" onClick="CLicked(id);" />prefer
+
+          not to say</div>
+<span id=Errorgender></span>
+<div></div>
+
+        <input type="submit" value="Submit">
+
+
+        
+
+      </form>
+
+      </div><br>
+
+      
+
+      <table class="list" id="Register">
+
+        <th>
+
+          <tr>
+
+            <th>FullName</th>
+
+            <th>UserName</th> 
+
+            <th>phoneNumber</th> 
+
+            <th>password</th>
+
+            <th>passWord2</th>
+
+            <th>Gender</th>
+
+          </tr>
+
+        </th>
+
+      </table>
+
+    
+
+      <script src="TestingS.js"></script>
+
+  </body>
+
+  
+
+</html>
