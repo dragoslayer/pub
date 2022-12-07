@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+  <head>
+
+    <title>Registration</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./style.css">
+
+    
+
+  </head>
+
+  <body>
+
+     
+
+      <div class="container">
+
+        <form id="form"   onsubmit="event.preventDefault();onSubmit();">
+
+        <h1>Registration</h1>
+
+      
+
+        <div style="margin-bottom:3% ;"class="left">
+
+          <label for="fullname">Full Name</label><br>
+
+          <input type="text" placeholder="Enter your name" id="fullname" required/><br>
+
+          <span id="errorFN"></span><br>
+
+          <label for="eemail">Email</label><br>
+
+          <input type="text" placeholder="Enter your email" id="eemail" required/><br>
+
+          <span id="Erroremail" ></span><br>
+
+     <div></div>
+
+          <label for="password">Password</label><br>
+
+          <input type="password" placeholder="Enter your password" id="password" required/><br>  
+
+          <span id="errorPwd1" ></span>  
+
+        </div>
+
+        <div class="right">
+
+          <label for="username">User name</label><br>
+
+          <input type="text" placeholder="enter your username"  id="username" required/><br>
+
+          <span id="errorUN" ></span><br>
+
+          <label for="phonenumber">Phone Number</label><br>
+
+          <input type="tel" placeholder="enter your number" id="phonenumber" required /><br>
+
+          <span id="errorNum" ></span><br>
+
+          <label for="password2">Confirm Password</label><br>
+
+          <input type="password" placeholder="connfirm your password"  id="password2" required/><br>
+
+          <span id="errorPwd2" ></span><br>
+
+          
+
+        </div>
+
+        
+
+        <div >
+
+          <label >Gender</label><br>
+
+          <input type="radio" name="gender" value="male"  id="maleB" onClick="CLicked(id);" />Male
+
+          <input type="radio" name="gender" value="female"  style="margin-left: 75px;"id="femaleB" onClick="CLicked(id);"/>Female
+
+          <input type="radio" name="gender" value="prefer not to say" style="margin-left: 75px;"id="ntsB" onClick="CLicked(id);"/>prefer
+
+          not to say
+
+        </div>
+
+        <span id=Errorgender></span>
+
+<div></div>
+
+        
+
+          <button type="submit">Register</buton>
+
+        
+
+      </form>
+
+    </div>
+
+      <script src="Script.js"></script>
+
+  </body>
+
+  
+
+</html>
